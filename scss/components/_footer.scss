@@ -9,14 +9,17 @@ footer{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 45px 10;
+    padding: 35px 10;
+    font-family: $fuente-principal;
     
-    h2{
+    h1{
         color: $bg-textos;
         display: flex;
         justify-content: center;
         margin-top: 40px;
+    }
+    a{
+        text-decoration: none;
     }
 }
 
@@ -54,7 +57,7 @@ footer{
 }
 
 .icono-footer{
-    width: 16px;
+    width: 20px;
     margin: 10px;
 }
 
@@ -62,6 +65,7 @@ footer{
     background-color: $bg-footer;
     text-align: center;
     padding: 5px;
+    font-family: $fuente-principal;
 }
 
 @media only screen and (max-width: 768px)

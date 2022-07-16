@@ -1,0 +1,7 @@
+Agregados y cambios:
+
+*Se cambió h2 por h1 en el footer y se agregó una redirección al inicio de la página.
+*Se agrega redirección en tarjetas de inicio que llevan a la sección servicios.
+*Se nombraron las imágenes de cada sección.
+*Se agrega meta name del título. 
+*Se agrega meta property.

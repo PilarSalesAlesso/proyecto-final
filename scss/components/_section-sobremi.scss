@@ -1,0 +1,43 @@
+.container__aboutMe{
+    background-color: $bg-textos;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+    padding: 100px;
+
+    img{
+        width: 40px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+        color: $bg-footer;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    .container__aboutMe{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 30px;
+        padding: 100px;
+    }
+}
+
+

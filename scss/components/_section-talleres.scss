@@ -1,0 +1,51 @@
+.section__talleres {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+    padding: 5px;
+    font-family: $fuente-principal;
+}
+
+
+.container__taller {
+    background-color: $bg-textos;
+    border-radius: 10px;
+    max-width: auto;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, .8);
+    transition: all 400ms ease;
+    
+    &:hover {
+        box-shadow: 10px 10px 30px rgb(0, 0, 0, .4);
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .img-talleres {
+        border-radius: 10px;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    
+    .section__talleres{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin: 20px;
+        padding: 5px;
+    }
+}

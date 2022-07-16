@@ -5,14 +5,13 @@
 }
 
 /*components*/
-/*navbar*/
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #e67824 !important;
+  background-color: #FBAB11 !important;
 }
 
 .navbar {
-  background: #86dd53;
+  background: #ABDD41;
 }
 .navbar .img-logo {
   width: 150px;
@@ -30,7 +29,7 @@ body {
   margin: 10px;
 }
 .navbar .buttom:hover {
-  background-color: #e67824;
+  background-color: #FBAB11;
   padding: 8px 12px;
   border-radius: 5px;
   font-size: 20px;
@@ -42,8 +41,316 @@ body {
     background-color: white !important;
   }
 }
+.carousel-inner {
+  height: 300px;
+}
+
+.img-banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.icono-img {
+  width: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-inner {
+    height: 200px;
+  }
+}
+.container-cards {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.container-cards .card-texts {
+  width: 350px;
+  height: 360px;
+  padding: 50px 0;
+  margin: 20px 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+  transition: all 400ms ease;
+}
+.container-cards .card-texts a {
+  text-decoration: none;
+  color: #000000;
+}
+.container-cards .card-texts:hover {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+}
+.container-cards .card-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.container-cards .card-paragraph {
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-cards {
+    display: block;
+  }
+}
+.section-service {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin: 40px;
+}
+
+.cards {
+  position: relative;
+  width: 300px;
+  height: 350px;
+}
+.cards .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cards .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000000;
+}
+.cards .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards .front h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.cards .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #87CE2A;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 5px 10px #000000;
+}
+.cards .back h2 {
+  margin-top: 30px;
+  text-decoration: underline;
+  font-family: "Raleway", sans-serif;
+}
+.cards .back p {
+  margin-top: 80px;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+.cards:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.cards:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .section-service {
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    margin: 40px;
+  }
+}
+.section__talleres {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px;
+  padding: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+.container__taller {
+  background-color: white;
+  border-radius: 10px;
+  max-width: auto;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+  transition: all 400ms ease;
+}
+.container__taller:hover {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+}
+.container__taller h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.container__taller p {
+  font-size: 1.2em;
+}
+.container__taller .img-talleres {
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .section__talleres {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin: 20px;
+    padding: 5px;
+  }
+}
+.container__aboutMe {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px;
+  padding: 100px;
+}
+.container__aboutMe img {
+  width: 40px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container__aboutMe h1 {
+  font-size: 20px;
+}
+.container__aboutMe h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #87CE2A;
+}
+.container__aboutMe p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+  .container__aboutMe {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin: 30px;
+    padding: 100px;
+  }
+}
+.section__contact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 10px;
+}
+.section__contact .container__text {
+  display: grid;
+  grid-column: 2/3;
+  justify-content: center;
+}
+.section__contact .container__text h2 {
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.section__contact .container__text p {
+  margin-bottom: 200px;
+  font-size: 20px;
+}
+
+.forma {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+  grid-column: 3/4;
+}
+
+.forma__contenedor {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+
+.forma__titulo {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 0.4em;
+}
+
+.forma__input {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  padding: 0.8em 1em;
+  outline: none;
+  border: none;
+  border: 1px solid #ABDD41;
+  border-radius: 0.2em;
+}
+
+.forma__input--mensaje {
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: 0.5em;
+}
+
+.forma__boton {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  background-color: #87CE2A;
+  color: white;
+  border: none;
+  font-weight: 300;
+  padding: 0.7em 0;
+  border-radius: 0.2em;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .section__contact {
+    display: block;
+    text-align: center;
+  }
+  .section__contact .container__text p {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .container__text h2 {
+    margin-top: 20px;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
 footer {
-  background-color: #86dd53;
+  background-color: #ABDD41;
   position: relative;
   width: 100%;
   height: auto;
@@ -53,14 +360,17 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 45px 10;
+  padding: 35px 10;
+  font-family: "Raleway", sans-serif;
 }
-.container__footer h2 {
+.container__footer h1 {
   color: white;
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+.container__footer a {
+  text-decoration: none;
 }
 
 .container__networks {
@@ -96,14 +406,15 @@ footer {
 }
 
 .icono-footer {
-  width: 16px;
+  width: 20px;
   margin: 10px;
 }
 
 .copyrightText {
-  background-color: #5fbe27;
+  background-color: #87CE2A;
   text-align: center;
   padding: 5px;
+  font-family: "Raleway", sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
@@ -119,55 +430,6 @@ footer {
   .container__footer h2 {
     margin-top: 20px;
   }
-}
-.container-cards {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-.container-cards .card-texts {
-  max-width: 100%;
-  height: 100%;
-  padding: 50px 0;
-  margin: 20px 20px;
-  background-color: white;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
-  transition: all 400ms ease;
-}
-.container-cards .icono-img {
-  width: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.container-cards .card-texts:hover {
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
-}
-.container-cards .card-title {
-  margin-bottom: 30px;
-  font-size: 20px;
-  font-family: "Raleway", sans-serif;
-}
-.container-cards .card-paragraph {
-  font-size: 1.2em;
-  font-family: "Raleway", sans-serif;
-  margin: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  .container-cards {
-    display: block;
-  }
-}
-.carousel-inner {
-  height: 400px;
-}
-
-.img-banner {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
