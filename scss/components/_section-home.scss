@@ -1,51 +1,51 @@
-    .container-cards{
-        display: flex;
-        justify-content: center; 
-        margin: 10px; 
+.container-cards{
+    display: flex;
+    justify-content: center; 
+    margin: 10px; 
 
-    .card-texts{
-        width: 350px;
-        height: 360px;
-        padding: 50px 0;
-        margin: 20px 20px;
-        background-color: $bg-textos;
-        text-align: center;
-        border-radius: 10px;
-        box-shadow: 0 0 6px rgb(0, 0, 0, .8);
-        transition: all 400ms ease;
+.card-texts{
+    width: 350px;
+    height: 360px;
+    padding: 50px 0;
+    margin: 20px 20px;
+    background-color: $bg-textos;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, .8);
+    transition: all 400ms ease;
 
-        a{
-            text-decoration: none;
-            color: $bg-textosDos;
-        }
+    a{
+        text-decoration: none;
+        color: $bg-textosDos;
     }
+}
 
-    .card-texts{
-        
-        &:hover{
-            box-shadow: 10px 10px 30px rgb(0, 0, 0, .4);
-        }   
-    }
-
-    .card-title{
-        margin-top: 20px;
-        margin-bottom: 30px;
-        font-size: 20px;
-        font-family: $fuente-principal;
-        font-weight: 700;
-    }
+.card-texts{
     
-    .card-paragraph{
-        font-size: 1.2em;
-        font-family: $fuente-principal;
-        margin: 20px;
-    }
+    &:hover{
+        box-shadow: 10px 10px 30px rgb(0, 0, 0, .4);
+    }   
+}
+
+.card-title{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: $fuente-principal;
+    font-weight: 700;
+}
+
+.card-paragraph{
+    font-size: 1.2em;
+    font-family: $fuente-principal;
+    margin: 20px;
+}
 
 }
 
 @media only screen and (max-width: 768px)
 {
-    .container-cards{
-        display: block;
-    }
+.container-cards{
+    display: block;
+}
 }

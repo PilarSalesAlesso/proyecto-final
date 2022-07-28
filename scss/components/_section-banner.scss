@@ -1,6 +1,10 @@
 .carousel-inner{
     height: 300px;
 }
+.carousel-caption h2{
+    background-color: black;
+    display: block;
+}
 
 .img-banner{
     width: 100%;
@@ -12,6 +16,10 @@
     width: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.disclaimer{
+    display: none;
 }
 
 @media only screen and (max-width: 768px){

@@ -51,12 +51,14 @@
 
         h2 {
             margin-top: 30px;
+            margin-bottom: 30px;
             text-decoration: underline; 
             font-family: $fuente-principal;
         }
 
-        p {
-            margin-top: 80px;
+        li {
+            list-style: none;
+            margin-top: 10px;
             font-size: 15px;
             font-family: $fuente-principal;
         }
